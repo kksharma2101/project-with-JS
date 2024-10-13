@@ -5,7 +5,7 @@ const symbolSet = "!@#$%^&*()";
 
 const display = document.getElementById("display");
 const upperCase = document.getElementById("UpperCase");
-const lowerCase = document.getElementById("LowerCase");
+const lowerCase = document.getElementById("lowerCase");
 const contNumber = document.getElementById("checkNumber");
 const symbol = document.getElementById("symbols");
 const button = document.getElementById("buttons");
@@ -31,18 +31,14 @@ function getPassword(password = "") {
   if (password.length < passLength.value) {
     return getPassword(password);
   }
-  console.log(password);
+  // console.log(password);
+  // print a data
+  display.innerHTML = password;
 }
 
-// print a data
-
-display.innerText = 
-
 // call the function
-getPassword();
+// getPassword();
 
 button.addEventListener("click", function () {
   getPassword();
 });
-
-

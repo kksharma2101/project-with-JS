@@ -35,11 +35,10 @@
   border: none;
 }
 #display {
-  height: 30px;
   font-size: 20px;
-  width: 20rem;
-  border-radius: 5px;
-  border: none;
+  padding: 3px 5px;
+  text-align: center;
+  color: white;
 }
 .button {
   width: 10rem;
@@ -65,7 +64,7 @@
 .symbols {
   gap: 11rem;
 }
-#LowerCase,
+#lowerCase,
 #checkNumber,
 #symbols,
 #UpperCase {
